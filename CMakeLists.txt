@@ -17,6 +17,9 @@ cmake_policy(SET CMP0042 OLD)
 # This project name is cyclus.
 PROJECT(CYCLUS)
 
+LINK_DIRECTORIES(${CONDA_PREFIX}/lib)
+INCLUDE_DIRECTORIES(${CONDA_PREFIX}/include)
+
 # check for and enable c++11 support (required for cyclus)
 INCLUDE(CheckCXXCompilerFlag)
 CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)

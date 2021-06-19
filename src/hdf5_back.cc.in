@@ -335,7 +335,6 @@ void Hdf5Back::CreateTable(Datum* d) {
   using std::set;
   using std::string;
   using std::vector;
-  using std::list;
   using std::pair;
   using std::list;
   using std::map;
